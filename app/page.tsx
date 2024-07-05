@@ -1,9 +1,9 @@
 import React from 'react'
-import ExerciseOne from './@exercise-1/page'
+import ExerciseOne from './@ExerciseOne/page'
 
 const Index = () => {
   return (
-    <div><ExerciseOne /></div>
+    <div className='grid justify-items-center'><ExerciseOne /></div>
   )
 }
 

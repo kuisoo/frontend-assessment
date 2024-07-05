@@ -1,10 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import {Archivo} from 'next/font/google'
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
+const archivo = Archivo({subsets: ['latin']})
 
 export const metadata = {
   title: 'Filta | Exercise 1',
@@ -17,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={archivo.className}>
       <body>{children}</body>
     </html>
   )
