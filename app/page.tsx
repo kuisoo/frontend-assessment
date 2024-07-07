@@ -1,10 +1,14 @@
-import React from 'react'
-import ExerciseOne from './@ExerciseOne/page'
+import React from "react";
+import ExerciseOne from "./@ExerciseOne/page";
+import FloatingButton from "./@ExerciseOne/components/FloatingButton";
 
 const Index = () => {
   return (
-    <div className='grid justify-items-center'><ExerciseOne /></div>
-  )
-}
+    <div className="relative grid justify-items-center sm:overflow-x-hidden">
+      <FloatingButton />
+      <ExerciseOne />
+    </div>
+  );
+};
 
-export default Index
+export default Index;

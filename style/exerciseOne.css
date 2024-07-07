@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .page {
+    @apply grid grid-cols-1 justify-items-center w-max overflow-x-hidden;
+  }
+  .banner {
+    /* Default for all screens */
+    @apply w-[600px] h-[600px] bg-mobile-banner bg-cover bg-center;
+    /* For min width 1280px */
+    @apply xl:w-screen xl:max-h-[650px] xl:bg-desktop-banner xl:flex xl:items-center;
+
+    .banner__container {
+      /* Default for all screens */
+      @apply w-[600px] h-[600px] py-44 px-5 text-white tracking-[0.2em];
+      /* For min width 1280px */
+      @apply xl:w-full xl:h-max xl:py-0;
+    }
+  }
+  .card-container {
+    /* Default for all screens */
+    @apply grid grid-cols-1 justify-items-center gap-[30px] my-[60px];
+    /* For min width 1536px */
+    @apply 2xl:grid-cols-3 2xl:h-[750px] 2xl:place-items-center 2xl:my-0 2xl:relative;
+
+    .card {
+      /* Default for all screens */
+      @apply flex flex-col p-[30px] w-[460px] h-max rounded-lg border;
+      /* For min screen width 1536px */
+      @apply 2xl:h-[680px];
+    }
+  }
+}
