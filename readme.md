@@ -1,40 +1,25 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+## Introduction
 
-Exercise 1
----
-Build a responsive page based on the designs.
+Hello I am Cris Marc Anading, and this is my exam submission for the frontend developer position. I used NextJS, Tailwind, and Typescript CSS because this is the setup I am most comfortable with right now.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+##### Installation
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+1. Clone the repository: `git clone https://github.com/kuisoo/frontend-assessment.git`
+2. Go to the new clone repository and install the packages: `npm install`
+3. Run the app: `npm run dev`
+4. The app will be running in localhost:3000
 
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+## Exercise 1
 
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+- Exercise 1 will be in the root URL (localhost:3000)
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+## Exercise 2
+
+- Exercise 2 will be in the URL (localhost:3000/exercise-2)
 
 ###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+- Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+- Answer: Grouping the expression would give ('b' + 'a' + (+'a') + 'a') which gives a result of 'baNaNa' since the expression (+'a') will return NaN (Not a Number). Turning all to lowercase will return 'banana'
+
+## NOTE: For easier navigation there is a floating button at the bottom right of the browser if you want to go to the other Exercise
